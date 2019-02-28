@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>browsing {{gerne_name}}</title>
+    </head>
+
+    <body>
+        <center><h1>Current {{gerne_name}} movies in database</h1></center>
+
+        <hr />
+
+        {% for item in movies %}
+            {{item.title}}, {{item.director}}, {{item.actor1}}, {{item.actor2}}, {{item.year}}, {{item.duration}} minutes<br>
+        {% endfor %}
+        <center>
+            <a href="/">Return to Main Page</a>
+        </center>
+
+    </body>
+</html>
+
+
+
+
